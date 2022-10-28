@@ -20,7 +20,7 @@ export default {
     },
     computed: {
         destination(){
-            return sourceData.destintations.find(
+            return sourceData.destinations.find(
                 destination => destination.id === this.id
             )
         },
@@ -30,13 +30,5 @@ export default {
             )
         },         
     }
-    // data() {
-    //     return {
-    //         experience: {
-    //             type: Object,
-    //             required: true
-    //         }
-    //     }
-    // }
 }
 </script>
