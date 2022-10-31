@@ -20,7 +20,12 @@ const routes = [
         props: route => ({...route.params, id: parseInt(route.params.id)}),
       },
     ]
-  },  
+  }, 
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: ()=> import('@/views/NotFoundView.vue'),
+  } 
 ];
 
 const router = createRouter({
